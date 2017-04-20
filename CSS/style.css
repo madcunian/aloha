@@ -1,0 +1,297 @@
+/* Mobile first */
+
+@media screen and (min-width: 480px) {
+
+}
+
+
+/* {
+    border: 1px solid #999;
+}*/
+
+body {
+    color: #2d2d2d;
+    font-family: "Raleway", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+ol, ul {
+	list-style: none;
+    -webkit-padding-start: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* --------------- Header --------------- */
+
+header {
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    max-width: 150px;
+    align-self: flex-start;
+    order: 1;
+}
+
+.navigation {
+    font-weight: 500;
+    align-self: center;
+    order: 2;
+}
+
+.navigation a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #e2574c;
+    padding: 0 1rem;
+}
+
+.navigation a:hover {
+    color: #555;
+    cursor: pointer;
+}
+
+.cart {
+    max-width: 60px;
+    align-self: flex-end;
+    order: 3;
+}
+
+/* --------------- Hero --------------- */
+
+.hero {
+    height: 550px;
+    width: 100%;
+    background:
+      linear-gradient(to bottom, rgba(0, 0, 0 ,0.3), rgba(100,100,100,0.3)),
+      url('../images/banner-girl.png') center bottom no-repeat,
+      url('../images/flower-bkgd.jpg') center top repeat-x;
+    background-size: auto, 250px, 850px;
+    background-position:
+      left 0 top 0,
+      left 50% bottom -120px,
+      left 0 top 0;
+    position: relative;
+    text-shadow: 2px 2px 2px #3d3d3d;
+}
+
+.hero p {
+    color: #FFF;
+    position: absolute;
+    left: 0;
+    top: 36%;
+    width: 100%;
+    text-align: center;
+    font-size: 1.25rem;
+}
+
+.hero-heading {
+    font-family: "Playfair Display", serif;
+    font-size: 4rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+/* --------------- Main --------------- */
+
+h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.heading-italic {
+    font-style: italic;
+    font-weight: normal;
+}
+
+/* --------------- Products --------------- */
+
+h3 {
+    font-family: "Playfair Display", serif;
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    color: #e2574c;
+}
+
+p, ul {
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+
+/* --------------- Hand-crafted --------------- */
+
+.hand-crafted {
+    margin: 5% 0;
+    padding: 0 25%;
+    line-height: 2rem;
+}
+
+/* --------------- Categories --------------- */
+
+.category a {
+    display: flex;
+    flex-wrap: wrap;
+    color: #FFF;
+    text-shadow: 2px 2px 2px #3d3d3d;
+    font-weight: 500;
+    font-size: 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    justify-content: center;
+    align-content: center;
+}
+
+.rectangle {
+    flex: 2 0 100%;
+    width: 600px;
+    height: 300px;
+}
+
+.square {
+    flex: 1 0 100%;
+    width: 300px;
+    height: 300px;
+}
+
+.mens {
+    background: url("../images/mens-category.jpg") no-repeat center center;
+    background-size: contain;
+}
+
+.trends {
+    background: url("../images/trends-category.jpg") no-repeat center center;
+    background-size: contain;
+}
+
+.glasses {
+    background: url("../images/glasses-category.jpg") no-repeat center center;
+    background-size: contain;
+}
+
+.sale {
+    background: url("../images/sale-category.jpg") no-repeat center center;
+    background-size: contain;
+}
+
+.bags {
+    background: url("../images/bags-category.jpg") no-repeat center center;
+    background-size: contain;
+}
+
+.womens {
+    background: url("../images/womens-category.jpg") no-repeat center center;
+    background-size: contain;
+}
+
+/* --------------- Sign-Up --------------- */
+
+.sign-up {
+    height: 400px;
+    width: 100%;
+    background:
+      linear-gradient(to bottom, rgba(0, 0, 0 ,0.2), rgba(100,100,100,0.2)),
+      url('../images/wave-bkgd.jpg') center bottom no-repeat;
+    background-size: 115%;
+    background-position: bottom;
+    color: #FFF;
+    text-shadow: 2px 2px 2px #3d3d3d;
+    text-align: center;
+    position: relative;
+    margin-bottom: 5px;
+}
+
+.sign-up-heading {
+    font-size: 2.5rem;
+}
+
+.sign-up-text {
+    line-height: 2rem;
+    position: relative;
+}
+
+.sign-up form {
+    margin: 0 auto;
+    position: relative;
+    width: 35%;
+    padding-top: 10px;
+}
+
+input {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+}
+
+
+input[type="email"] {
+    padding: 15px;
+    width: 100%;
+    border: 0;
+    border-radius: 25px;
+}
+
+input[type="submit"] {
+    background-color: #e2574c;
+    color: #FFF;
+    font-weight: 400;
+    padding: 11px 25px;
+    position: absolute;
+    border: 0;
+    border-radius: 25px;
+    right: -25px;
+    top: 14px;
+    cursor: pointer;
+}
+
+/* --------------- Footer --------------- */
+
+footer {
+    background-color: #242424;
+    height: 150px;
+    color: #FFF;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4rem;
+}
+
+footer .copyright {
+    text-align: left;
+    font-family: "Playfair Display", serif;
+    font-size: 1rem;
+    font-weight: 400;
+    align-self: flex-start;
+    margin: 0;
+}
+
+.copyright .address {
+    color: #969696;
+}
+
+footer .copyright a {
+    color: #FFF;
+}
+
+footer .social {
+    text-align: left;
+    font-weight: 300;
+    line-height: 1.75em;
+    align-self: flex-end;
+}
+
+td {
+    padding: 0 7px 0 0;
+}
