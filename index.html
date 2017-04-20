@@ -8,42 +8,38 @@
   <title>Aloha Homepage</title>
 </head>
 <body>
-  <div class="container">
-    <header class="header">
-      <img src="images/aloha-logo.svg" class="logo">
+    <header>
+      <img src="images/aloha-logo.svg" alt="Aloha Logo" class="logo">
         <nav class="navigation">
-          <ul>
-            <li><a href="about">About</a></li>
-            <li><a href="about">Shop</a></li>
-            <li><a href="about">Featured</a></li>
-            <li><a href="about">Updates</a></li>
-          </ul>
+          <a href="about">About</a>
+          <a href="about">Shop</a>
+          <a href="about">Featured</a>
+          <a href="about">Updates</a>
         </nav>
-      <img src="images/cart-icon.svg" class="cart">
+      <img src="images/cart-icon.svg" alt="Shopping cart icon" class="cart">
     </header>
 
     <section class="hero">
       <p>NEW COLLECTION</br>
       <span class="hero-heading">Spring/Summer 2016</span></p>
-      <!-- <img src="images/flower-bkgd.jpg"> -->
     </section>
 
-    <section>
+    <section class="hand-crafted">
       <h2><span class="heading-italic">Hand-Crafted</span> Styles</h2>
       <p>Aloha Apparel Co. sells only the finest ready-to-travel clothing. Browse our current selection of products or sign-up for updates below.</p>
     </section>
-    <section>
-      <ul>
-        <li>Men's</li>
-        <li>Trends</li>
-        <li>Glasses</li>
-        <li>Sale</li>
-        <li>Bags</li>
-        <li>Woman's</li>
-      </ul>
+
+    <section class="category">
+      <a href="a" class="rectangle mens">Men's</a>
+      <a href="a" class="square trends">Trends</a>
+      <a href="a" class="square glasses">Glasses</a>
+      <a href="a" class="square sale">Sale</a>
+      <a href="a" class="square bags">Bags</a>
+      <a href="a" class="rectangle womens">Women's</a>
     </section>
-    <section>
-      <h2><span class="heading-italic">Most-Loved</span> Products<h2>
+    
+    <section class="products">
+      <h2><span class="heading-italic">Most-Loved</span> Products</h2>
         <ul>
           <li>
           <img src="images/stretch-knit-dress.jpg" alt="Image of stretch knit dress">
@@ -51,16 +47,19 @@
           <h3>Stretch Knit Dress</h3>
           <p>$169.00</p>
           </li>
+          <li>
           <img src="images/cotton-blue-shirt.jpg" alt="Image of cotton blue shirt">
           <p>Shirts</p>
           <h3>Cotton Blue Shirt</h3>
           <p>$189.00</p>
           </li>
+          <li>
           <img src="images/checked-stretch-dress.jpg" alt="Image of checked stretch dress">
           <p>Dresses</p>
           <h3>Checked Stretch Dress</h3>
           <p>$129.00</p>
           </li>
+          <li>
           <img src="images/blue-hipster-backpack.jpg" alt="Image of blue hipster backpack">
           <p>Dresses</p>
           <h3>Blue Hipster Backpack</h3>
@@ -69,18 +68,22 @@
         </ul>
     </section>
     <section class="sign-up">
-      <div class="sign-up-text">
         <h2 class="sign-up-heading"><span class="heading-italic">Sign-Up for</span> Updates</h2>
-        <p>Stay updated on our latest product releases, be first to find out about upcoming sales, and get free style tips from our blog. Unsubscribe at any time.</p>
+        <p class="sign-up-text">Stay updated on our latest product releases, be first to find out about upcoming sales, and get free style tips from our blog. Unsubscribe at any time.</p>
         <form class="sign-up-form">
           <input type="email" name="name" placeholder="Your Email">
           <input type="submit" name="name" value="Subscribe">
         </form>
-      </div>
     </section>
     <footer class="footer">
-      <p class="copyright">&copy 2016 Aloha Apparel Co.<br>
+      <p class="copyright">&copy; 2016 Aloha Apparel Co.<br>
       Powered by HTML and CSS.<br><br> 604-604-6040. <a href="mailto:info@alohaapparel.com">info@alohaapparel.com</a><br><br><span class="address">1490 West Broadway<br> Vancouver, BC, Canada</span></p>
+      <!--<ul class="social">
+        <li><i class="fa fa-facebook fa-fw" aria-hidden="true"></i>&nbsp; Facebook</td></li>
+        <li><i class="fa fa-twitter fa-fw" aria-hidden="true"></i>&nbsp; Twitter</td></li>
+        <li><i class="fa fa-instagram fa-fw" aria-hidden="true"></i>&nbsp; Instagram</td></li>
+        <li><i class="fa fa-pinterest fa-fw" aria-hidden="true"></i>&nbsp; Pinterest</td></li>
+        <li><i class="fa fa-google-plus fa-fw" aria-hidden="true"></i>&nbsp; Google+</td></li>-->
       <table class="social">
         <tr>
           <td><i class="fa fa-facebook" aria-hidden="true"></i></td>
@@ -104,6 +107,5 @@
         </tr>
       </table>
     </footer>
-  </div>
 </body>
 </html>

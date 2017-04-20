@@ -1,0 +1,3 @@
+bears = CSSLintBear, SpaceConsistencyBear
+files = css/*.css
+use_spaces = True
