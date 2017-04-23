@@ -354,105 +354,133 @@ p, ul {
   background-size: cover, cover;
 }
 
+/* --------------- Products --------------- */
+
+.products {
+  padding: 4rem 0;
+}
+
+.products h2 {
+  margin-bottom: 2rem;
+}
+
+.carousel-cell {
+  width: 100%;
+  text-align: center;
+}
+
+.carousel-cell p {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+}
+
+.carousel-cell .price {
+  font-size: 1rem;
+}
+
+.carousel-cell h3 {
+  font-size: 1.5rem;
+  margin: 0.25rem 0;
+}
+
+.carousel-cell button {
+  background-color: #242424;
+  border: 0;
+  border-radius: 25px;
+  color: #FFF;
+  cursor: pointer;
+  margin: 0.75rem 0 2rem;
+  padding: 0.5rem 1rem;
+}
+
 /* --------------- Sign-Up --------------- */
 
 .sign-up {
-    height: 400px;
-    width: 100%;
-    background:
-      linear-gradient(to bottom, rgba(0, 0, 0 ,0.2), rgba(100,100,100,0.2)),
-      url('../images/wave-bkgd.jpg') center bottom no-repeat;
-    background-size: 115%;
-    background-position: bottom;
-    color: #FFF;
-    text-shadow: 2px 2px 2px #3d3d3d;
-    text-align: center;
-    position: relative;
-    margin-bottom: 5px;
+  background:
+    linear-gradient(to bottom, rgba(0, 0, 0 ,0.2), rgba(100,100,100,0.2)),
+    url('../images/wave-bkgd.jpg') bottom no-repeat;
+  color: #FFF;
+  margin-bottom: 5px;
+  width: 100%;
+  padding: 10% 0;
+  text-shadow: 2px 2px 2px #3d3d3d;
+  text-align: center;
 }
 
 .sign-up-heading {
-    font-size: 2.5rem;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
 }
 
 .sign-up-text {
-    line-height: 2rem;
-    position: relative;
+  line-height: 2rem;
 }
 
 .sign-up form {
-    margin: 0 auto;
-    position: relative;
-    width: 35%;
-    padding-top: 10px;
+  margin: 10% auto 0;
+  position: relative;
+  width: 80%;
 }
 
 input {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 300;
-    font-size: 1rem;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
 }
 
 
 input[type="email"] {
-    padding: 15px;
-    width: 100%;
-    border: 0;
-    border-radius: 25px;
+  padding: 0.95rem 1.5rem;
+  width: 100%;
+  border: 0;
+  border-radius: 25px;
 }
 
 input[type="submit"] {
-    background-color: #e2574c;
-    color: #FFF;
-    font-weight: 400;
-    padding: 11px 25px;
-    position: absolute;
-    border: 0;
-    border-radius: 25px;
-    right: -25px;
-    top: 14px;
-    cursor: pointer;
+  background-color: #e2574c;
+  color: #FFF;
+  font-weight: 400;
+  padding: 0.7rem 1.5rem;
+  position: absolute;
+  border: 0;
+  border-radius: 25px;
+  right: 0.25rem;
+  top: 0.25rem;
+  cursor: pointer;
 }
 
 /* --------------- Footer --------------- */
 
 footer {
-    background-color: #242424;
-    height: 150px;
-    color: #FFF;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    padding: 4rem;
+  background-color: #242424;
+  color: #FFF;
+  font-family: "Playfair Display", serif;
+  line-height: 1.5rem;
+  padding: 4rem;
+  text-align: center;
 }
 
-footer .copyright {
-    text-align: left;
-    font-family: "Playfair Display", serif;
-    font-size: 1rem;
-    font-weight: 400;
-    align-self: flex-start;
-    margin: 0;
+.copyright {
+  margin-bottom: 2rem;
 }
 
-.copyright .address {
-    color: #969696;
+.contacts, a {
+  color: #FFF;
+  margin-bottom: 2rem;
 }
 
-footer .copyright a {
-    color: #FFF;
+.address {
+  color: #969696;
 }
 
-footer .social {
-    text-align: left;
-    font-weight: 300;
-    line-height: 1.75em;
-    align-self: flex-end;
+.social {
+  margin-top: 2rem;
 }
 
-td {
-    padding: 0 7px 0 0;
+.social li {
+  margin: 0 0.5rem;
+  display: inline-block;
+  line-height: 1.75em;
 }
 
 @media screen and (min-width: 600px) {

@@ -2,7 +2,11 @@ $(function() {
 
   // Scroll down smoothly
 
-  // Flickity
+  $('.main-carousel').flickity({
+  // options
+  cellAlign: 'left',
+  contain: true
+});
 
   // Submit
 

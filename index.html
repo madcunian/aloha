@@ -58,74 +58,61 @@
       </div>
     </section>
     
-    <section class="products container">
+    <section class="products">
       <h2><span class="heading-italic">Most-Loved</span> Products</h2>
-        <ul>
-          <li>
-          <img src="images/stretch-knit-dress.jpg" alt="Image of stretch knit dress">
-          <p>Dresses</p>
-          <h3>Stretch Knit Dress</h3>
-          <p>$169.00</p>
-          </li>
-          <li>
-          <img src="images/cotton-blue-shirt.jpg" alt="Image of cotton blue shirt">
-          <p>Shirts</p>
-          <h3>Cotton Blue Shirt</h3>
-          <p>$189.00</p>
-          </li>
-          <li>
-          <img src="images/checked-stretch-dress.jpg" alt="Image of checked stretch dress">
-          <p>Dresses</p>
-          <h3>Checked Stretch Dress</h3>
-          <p>$129.00</p>
-          </li>
-          <li>
-          <img src="images/blue-hipster-backpack.jpg" alt="Image of blue hipster backpack">
-          <p>Dresses</p>
-          <h3>Blue Hipster Backpack</h3>
-          <p>$69.00</p>
-          </li>
-        </ul>
+        <div class="main-carousel" data-flickity='{ "autoPlay": 1500, "pauseAutoPlayOnHover": true }'>
+          <div class="carousel-cell">
+            <img src="images/stretch-knit-dress.jpg" alt="Image of stretch knit dress">
+            <p>Dresses</p>
+            <h3>Stretch Knit Dress</h3>
+            <p class="price">$169.00</p>
+            <button class="buy">Add to cart</button>
+          </div>
+          <div class="carousel-cell">
+            <img src="images/cotton-blue-shirt.jpg" alt="Image of cotton blue shirt">
+            <p>Shirts</p>
+            <h3>Cotton Blue Shirt</h3>
+            <p class="price">$189.00</p>
+            <button class="buy">Add to cart</button>
+          </div>
+          <div class="carousel-cell">
+            <img src="images/checked-stretch-dress.jpg" alt="Image of checked stretch dress">
+            <p>Dresses</p>
+            <h3>Checked Stretch Dress</h3>
+            <p class="price">$129.00</p>
+            <button class="buy">Add to cart</button>
+          </div>
+          <div class="carousel-cell">
+            <img src="images/blue-hipster-backpack.jpg" alt="Image of blue hipster backpack">
+            <p>Dresses</p>
+            <h3>Blue Hipster Backpack</h3>
+            <p class="price">$69.00</p>
+            <button type="button" class="buy">Add to cart</button>
+          </div>
+        </div>
     </section>
     <section class="sign-up container">
-        <h2 class="sign-up-heading"><span class="heading-italic">Sign-Up for</span> Updates</h2>
+        <h2 class="sign-up-heading">
+          <span class="heading-italic">Sign-Up for</span> Updates
+        </h2>
         <p class="sign-up-text">Stay updated on our latest product releases, be first to find out about upcoming sales, and get free style tips from our blog. Unsubscribe at any time.</p>
         <form class="sign-up-form">
           <input type="email" name="name" placeholder="Your Email">
           <input type="submit" name="name" value="Subscribe">
         </form>
     </section>
-    <footer class="footer container">
-      <p class="copyright">&copy; 2016 Aloha Apparel Co.<br>
-      Powered by HTML and CSS.<br><br> 604-604-6040. <a href="mailto:info@alohaapparel.com">info@alohaapparel.com</a><br><br><span class="address">1490 West Broadway<br> Vancouver, BC, Canada</span></p>
+    <footer class="footer">
+      <p class="copyright">&copy; 2016 Aloha Apparel Co.
+      Powered by HTML and CSS.</p>
+      <p class="contacts">604-604-6040. <a href="mailto:info@alohaapparel.com">info@alohaapparel.com</a></p>
+      <p class="address">1490 West Broadway</p>
+      <p class="address">Vancouver, BC, Canada</p>
       <ul class="social">
-        <li><i class="fa fa-facebook fa-fw" aria-hidden="true"></i>&nbsp; Facebook</td></li>
-        <li><i class="fa fa-twitter fa-fw" aria-hidden="true"></i>&nbsp; Twitter</td></li>
-        <li><i class="fa fa-instagram fa-fw" aria-hidden="true"></i>&nbsp; Instagram</td></li>
-        <li><i class="fa fa-pinterest fa-fw" aria-hidden="true"></i>&nbsp; Pinterest</td></li>
-        <li><i class="fa fa-google-plus fa-fw" aria-hidden="true"></i>&nbsp; Google+</td></li>
-      <!--<table class="social">
-        <tr>
-          <td><i class="fa fa-facebook" aria-hidden="true"></i></td>
-          <td>Facebook</td>
-        </tr>
-        <tr>
-          <td><i class="fa fa-twitter" aria-hidden="true"></i></td>
-          <td>Twitter</td>
-        </tr>
-        <tr>
-          <td><i class="fa fa-instagram" aria-hidden="true"></i></td>
-          <td>Instagram</td>
-        </tr>
-        <tr>
-          <td><i class="fa fa-pinterest" aria-hidden="true"></i></td>
-          <td>Pinterest</td>
-        </tr>
-        <tr>
-          <td><i class="fa fa-google-plus" aria-hidden="true"></i></td>
-          <td>Google+</td>
-        </tr>
-      </table>-->
+        <li><i class="fa fa-facebook" aria-hidden="true"></i></li>
+        <li><i class="fa fa-twitter" aria-hidden="true"></i></li>
+        <li><i class="fa fa-instagram" aria-hidden="true"></i></li>
+        <li><i class="fa fa-pinterest" aria-hidden="true"></i></li>
+        <li><i class="fa fa-google-plus" aria-hidden="true"></i></li>
     </footer>
     <script src="lib/jquery-3.2.1.min.js"></script>
     <script src="lib/flickity/flickity.pkgd.min.js"></script>
