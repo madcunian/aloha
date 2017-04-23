@@ -44,37 +44,36 @@ table {
 	border-spacing: 0;
 }
 
-/* --------------- Fonts --------------- */
 
 @font-face {
-    font-family: 'playfair_display';
+    font-family: 'playfair_displaybold';
     src: url('playfairdisplay-bold-webfont.woff2') format('woff2'),
          url('playfairdisplay-bold-webfont.woff') format('woff');
-    font-weight: bold;
+    font-weight: normal;
     font-style: normal;
 
 }
 
 @font-face {
-    font-family: 'playfair_display';
+    font-family: 'playfair_displaybold_italic';
     src: url('playfairdisplay-bolditalic-webfont.woff2') format('woff2'),
          url('playfairdisplay-bolditalic-webfont.woff') format('woff');
-    font-weight: bold;
-    font-style: italic;
+    font-weight: normal;
+    font-style: normal;
 
 }
 
 @font-face {
-    font-family: 'playfair_display';
+    font-family: 'playfair_displayitalic';
     src: url('playfairdisplay-italic-webfont.woff2') format('woff2'),
          url('playfairdisplay-italic-webfont.woff') format('woff');
     font-weight: normal;
-    font-style: italic;
+    font-style: normal;
 
 }
 
 @font-face {
-    font-family: 'playfair_display';
+    font-family: 'playfair_displayregular';
     src: url('playfairdisplay-regular-webfont.woff2') format('woff2'),
          url('playfairdisplay-regular-webfont.woff') format('woff');
     font-weight: normal;
@@ -86,22 +85,22 @@ table {
     font-family: 'raleway';
     src: url('raleway-light-webfont.woff2') format('woff2'),
          url('raleway-light-webfont.woff') format('woff');
-    font-weight: normal;
+    font-weight: lighter;
     font-style: normal;
 
 }
 
 @font-face {
-    font-family: 'raleway';
+    font-family: 'ralewaylight_italic';
     src: url('raleway-lightitalic-webfont.woff2') format('woff2'),
          url('raleway-lightitalic-webfont.woff') format('woff');
-    font-weight: normal;
+    font-weight: lighter;
     font-style: italic;
 
 }
 
 @font-face {
-    font-family: 'raleway';
+    font-family: 'ralewaymedium';
     src: url('raleway-medium-webfont.woff2') format('woff2'),
          url('raleway-medium-webfont.woff') format('woff');
     font-weight: bold;
@@ -110,7 +109,7 @@ table {
 }
 
 @font-face {
-    font-family: 'raleway';
+    font-family: 'ralewaymedium_italic';
     src: url('raleway-mediumitalic-webfont.woff2') format('woff2'),
          url('raleway-mediumitalic-webfont.woff') format('woff');
     font-weight: bold;
@@ -118,11 +117,15 @@ table {
 
 }
 
+* {
+  box-sizing: border-box;
+}
 
 body {
   color: #2d2d2d;
   font-family: "Raleway", sans-serif;
   font-size: 16px;
+  line-height: 2rem;
 }
 
 ol, ul {
@@ -136,32 +139,43 @@ img {
 
 .container {
   margin: 0 auto;
-  max-width: 1240px;
+  padding: 0 1rem;
+}
+
+h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.heading-italic {
+    font-style: italic;
+    font-weight: normal;
 }
 
 /* --------------- Header --------------- */
 
-header {
+.main-header {
   background-color: #FFF;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 1rem;
   position: fixed;
-  width: 100%;
+  top: 0;
   z-index: 1;
 }
 
 .logo {
   align-self: flex-start;
   cursor: pointer;
-  max-width: 150px;
+  max-width: 120px;
 }
 
 .cart {
   align-self: flex-end;
   cursor: pointer;
-  max-width: 60px;
+  max-width: 50px;
 }
 
 .navigation {
@@ -195,130 +209,149 @@ header {
 /* --------------- Hero --------------- */
 
 .hero {
-    height: 550px;
-    width: 100%;
-    background:
-      linear-gradient(to bottom, rgba(0, 0, 0 ,0.3), rgba(100,100,100,0.3)),
-      url('../images/banner-girl.png') center bottom no-repeat,
-      url('../images/flower-bkgd.jpg') center top repeat-x;
-    background-size: auto, 250px, 850px;
-    background-position:
-      left 0 top 0,
-      left 50% bottom -120px,
-      left 0 top 0;
-    position: relative;
-    text-shadow: 2px 2px 2px #3d3d3d;
+  height: 400px;
+  width: 100%;
+  background:
+    linear-gradient(to bottom, rgba(0, 0, 0 ,0.3), rgba(100,100,100,0.3)),
+    url('../images/banner-girl.png') center no-repeat,
+    url('../images/flower-bkgd.jpg') top repeat-x;
+  background-size: auto, 200px, cover;
+  margin-top: 100px;
+  background-position:
+    left 0 top 0,
+    left 50% bottom -120px,
+    left 0 top 0;
+  position: relative;
 }
 
-.hero p {
-    color: #FFF;
-    position: absolute;
-    left: 0;
-    top: 36%;
-    width: 100%;
-    text-align: center;
-    font-size: 1.25rem;
+.hero-text {
+  color: #FFF;
+  left: 10%;
+  position: absolute;
+  text-align: center;
+  text-shadow: 2px 2px 2px #3d3d3d;
+  text-transform: uppercase;
+  top: 40%;
+}
+
+.hero-subheading {
+  font-size: 1.25rem;
+  margin-bottom: 1rem; 
 }
 
 .hero-heading {
-    font-family: "Playfair Display", serif;
-    font-size: 4rem;
-    font-weight: 400;
-    text-align: center;
-}
-
-/* --------------- Main --------------- */
-
-h2 {
-    font-family: "Playfair Display", serif;
-    font-size: 3rem;
-    text-align: center;
-}
-
-.heading-italic {
-    font-style: italic;
-    font-weight: normal;
-}
-
-/* --------------- Products --------------- */
-
-h3 {
-    font-family: "Playfair Display", serif;
-    font-size: 2rem;
-    font-weight: 700;
-    text-align: center;
-    color: #e2574c;
-}
-
-p, ul {
-    text-align: center;
-    font-size: 1.25rem;
-    font-weight: 300;
+  font-family: "PlayfairDisplay", serif;
+  font-size: 3rem;
+  font-weight: 400;
+  text-transform: capitalize;
 }
 
 /* --------------- Hand-crafted --------------- */
 
 .hand-crafted {
-    margin: 5% 0;
-    padding: 0 25%;
-    line-height: 2rem;
+  margin: 3rem 0;
 }
+
+.hand-crafted h2 {
+  margin-bottom: 2rem;
+}
+
+/* --------------- Products --------------- */
+
+h3 {
+  font-family: "Playfair Display", serif;
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  color: #e2574c;
+}
+
+p, ul {
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+
 
 /* --------------- Categories --------------- */
 
-.category a {
-    display: flex;
-    flex-wrap: wrap;
-    color: #FFF;
-    text-shadow: 2px 2px 2px #3d3d3d;
-    font-weight: 500;
-    font-size: 2rem;
-    text-decoration: none;
-    text-transform: uppercase;
-    justify-content: center;
-    align-content: center;
+.category {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.category-text a {
+  color: #FFF;
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-shadow: 2px 2px 2px #3d3d3d;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.category-text a:hover {
+  color: #f5ecc4;
 }
 
 .rectangle {
-    flex: 2 0 100%;
-    width: 600px;
-    height: 300px;
+  flex: 2 0 100%;
+  max-width: 100%;
+  border: 3px solid #FFF;
+  border-left: 0;
+  border-right: 0;
 }
 
 .square {
-    flex: 1 0 100%;
-    width: 300px;
-    height: 300px;
+  flex: 1 0 50%;
+  max-width: 50%;
+  border: 3px solid #FFF;
 }
 
 .mens {
-    background: url("../images/mens-category.jpg") no-repeat center center;
-    background-size: contain;
+  background:
+    linear-gradient(to bottom, rgba(0, 0, 0 ,0.2), rgba(100,100,100,0.2)),
+    url("../images/mens-category.jpg") no-repeat;
+  background-size: cover, cover;
 }
 
 .trends {
-    background: url("../images/trends-category.jpg") no-repeat center center;
-    background-size: contain;
+  background:
+    linear-gradient(to bottom, rgba(0, 0, 0 ,0.2), rgba(100,100,100,0.2)),
+    url("../images/trends-category.jpg") no-repeat;
+  background-size: cover, cover;
+  border-left: 0;
 }
 
 .glasses {
-    background: url("../images/glasses-category.jpg") no-repeat center center;
-    background-size: contain;
+  background:
+    linear-gradient(to bottom, rgba(0, 0, 0 ,0.2), rgba(100,100,100,0.2)),
+    url("../images/glasses-category.jpg") no-repeat;
+  background-size: cover, cover;
+  border-right: 0;
 }
 
 .sale {
-    background: url("../images/sale-category.jpg") no-repeat center center;
-    background-size: contain;
+  background:
+    linear-gradient(to bottom, rgba(0, 0, 0 ,0.2), rgba(100,100,100,0.2)),
+    url("../images/sale-category.jpg") no-repeat;
+  background-size: cover, cover;
+  border-left: 0;
 }
 
 .bags {
-    background: url("../images/bags-category.jpg") no-repeat center center;
-    background-size: contain;
+  background:
+    linear-gradient(to bottom, rgba(0, 0, 0 ,0.2), rgba(100,100,100,0.2)),
+    url("../images/bags-category.jpg") no-repeat;
+  background-size: cover, cover;
+  border-right: 0;
 }
 
 .womens {
-    background: url("../images/womens-category.jpg") no-repeat center center;
-    background-size: contain;
+  background:
+    linear-gradient(to bottom, rgba(0, 0, 0 ,0.2), rgba(100,100,100,0.2)),
+    url("../images/womens-category.jpg") no-repeat;
+  background-size: cover, cover;
 }
 
 /* --------------- Sign-Up --------------- */
