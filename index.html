@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
+  <meta charset="utf-8" name="viewport" content="width=device-width">
   <script src="https://use.fontawesome.com/382f947f1c.js"></script>
   <link rel="stylesheet" href="CSS/style.css">
   <link rel="stylesheet" href="lib/flickity/flickity.min.css">
@@ -39,28 +39,28 @@
 
     <section class="category">
       <div class="mens rectangle">
-        <span class="category-text"><a href="#">Men's</a></span>
+        <a href="#" class="category-text">Men's</a>
       </div>
       <div class="trends square">
-        <span class="category-text"><a href="#">Trends</a></span>
+        <a href="#" class="category-text">Trends</a>
       </div>
       <div class="glasses square">
-        <span class="category-text"><a href="#">Glasses</a></span>
+        <a href="#" class="category-text">Glasses</a>
       </div>
       <div class="sale square">
-        <span class="category-text"><a href="#">Sale</a></span>
+        <a href="#" class="category-text">Sale</a>
       </div>
       <div class="bags square">
-        <span class="category-text"><a href="#">Bags</a></span>
+        <a href="#" class="category-text">Bags</a>
       </div>
       <div class="womens rectangle">
-        <span class="category-text"><a href="#">Women's</a></span>
+        <a href="#" class="category-text">Women's</a>
       </div>
     </section>
     
     <section class="products">
       <h2><span class="heading-italic">Most-Loved</span> Products</h2>
-        <div class="main-carousel" data-flickity='{ "autoPlay": 1500, "pauseAutoPlayOnHover": true }'>
+        <div class="main-carousel" data-flickity='{ "autoPlay": 2000, "pauseAutoPlayOnHover": true }'>
           <div class="carousel-cell">
             <img src="images/stretch-knit-dress.jpg" alt="Image of stretch knit dress">
             <p>Dresses</p>
@@ -91,28 +91,32 @@
           </div>
         </div>
     </section>
-    <section class="sign-up container">
+    <section class="sign-up">
         <h2 class="sign-up-heading">
           <span class="heading-italic">Sign-Up for</span> Updates
         </h2>
         <p class="sign-up-text">Stay updated on our latest product releases, be first to find out about upcoming sales, and get free style tips from our blog. Unsubscribe at any time.</p>
         <form class="sign-up-form">
-          <input type="email" name="name" placeholder="Your Email">
+          <input type="email" id="sign-up" name="name" placeholder="Your Email">
           <input type="submit" name="name" value="Subscribe">
         </form>
     </section>
     <footer class="footer">
-      <p class="copyright">&copy; 2016 Aloha Apparel Co.
-      Powered by HTML and CSS.</p>
-      <p class="contacts">604-604-6040. <a href="mailto:info@alohaapparel.com">info@alohaapparel.com</a></p>
-      <p class="address">1490 West Broadway</p>
-      <p class="address">Vancouver, BC, Canada</p>
+      <div class="yellow-pages">
+        <div <p class="copyright">
+          <p>&copy; 2016 Aloha Apparel Co.</p>
+          <p>Powered by HTML and CSS.</p>
+          <p class="contacts">604-604-6040. <a href="mailto:info@alohaapparel.com">info@alohaapparel.com</a></p>
+          <p class="address">1490 West Broadway</p>
+          <p class="address">Vancouver, BC, Canada</p>
+        </div>
+      </div>
       <ul class="social">
-        <li><i class="fa fa-facebook" aria-hidden="true"></i></li>
-        <li><i class="fa fa-twitter" aria-hidden="true"></i></li>
-        <li><i class="fa fa-instagram" aria-hidden="true"></i></li>
-        <li><i class="fa fa-pinterest" aria-hidden="true"></i></li>
-        <li><i class="fa fa-google-plus" aria-hidden="true"></i></li>
+        <li><a href="a"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+        <li><a href="a"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+        <li><a href="a"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+        <li><a href="a"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+        <li><a href="a"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
     </footer>
     <script src="lib/jquery-3.2.1.min.js"></script>
     <script src="lib/flickity/flickity.pkgd.min.js"></script>

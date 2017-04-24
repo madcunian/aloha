@@ -44,38 +44,45 @@ table {
 	border-spacing: 0;
 }
 
-
 @font-face {
-    font-family: 'playfair_displaybold';
-    src: url('playfairdisplay-bold-webfont.woff2') format('woff2'),
-         url('playfairdisplay-bold-webfont.woff') format('woff');
-    font-weight: normal;
+    font-family: 'playfair_display';
+    src: url('../fonts/playfairdisplay-bold-webfont.woff2') format('woff2'),
+         url('../fonts/playfairdisplay-bold-webfont.woff') format('woff'),
+         url('../fonts/playfairdisplay-bold-webfont.ttf') format('truetype'),
+         url('../fonts/playfairdisplay-bold-webfont.svg#playfair_displaybold') format('svg');
+    font-weight: bold;
     font-style: normal;
 
 }
 
 @font-face {
-    font-family: 'playfair_displaybold_italic';
-    src: url('playfairdisplay-bolditalic-webfont.woff2') format('woff2'),
-         url('playfairdisplay-bolditalic-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+    font-family: 'playfair_display';
+    src: url('../fonts/playfairdisplay-bolditalic-webfont.woff2') format('woff2'),
+         url('../fonts/playfairdisplay-bolditalic-webfont.woff') format('woff'),
+         url('../fonts/playfairdisplay-bolditalic-webfont.ttf') format('truetype'),
+         url('../fonts/playfairdisplay-bolditalic-webfont.svg#playfair_displaybold_italic') format('svg');
+    font-weight: bold;
+    font-style: italic;
 
 }
 
 @font-face {
-    font-family: 'playfair_displayitalic';
-    src: url('playfairdisplay-italic-webfont.woff2') format('woff2'),
-         url('playfairdisplay-italic-webfont.woff') format('woff');
+    font-family: 'playfair_display';
+    src: url('../fonts/playfairdisplay-italic-webfont.woff2') format('woff2'),
+         url('../fonts/playfairdisplay-italic-webfont.woff') format('woff'),
+         url('../fonts/playfairdisplay-italic-webfont.ttf') format('truetype'),
+         url('../fonts/playfairdisplay-italic-webfont.svg#playfair_displayitalic') format('svg');
     font-weight: normal;
-    font-style: normal;
+    font-style: italic;
 
 }
 
 @font-face {
-    font-family: 'playfair_displayregular';
-    src: url('playfairdisplay-regular-webfont.woff2') format('woff2'),
-         url('playfairdisplay-regular-webfont.woff') format('woff');
+    font-family: 'playfair_display';
+    src: url('../fonts/playfairdisplay-regular-webfont.woff2') format('woff2'),
+         url('../fonts/playfairdisplay-regular-webfont.woff') format('woff'),
+         url('f../onts/playfairdisplay-regular-webfont.ttf') format('../truetype'),
+         url('../fonts/playfairdisplay-regular-webfont.svg#playfair_displayregular') format('svg');
     font-weight: normal;
     font-style: normal;
 
@@ -83,39 +90,26 @@ table {
 
 @font-face {
     font-family: 'raleway';
-    src: url('raleway-light-webfont.woff2') format('woff2'),
-         url('raleway-light-webfont.woff') format('woff');
-    font-weight: lighter;
+    src: url('../fonts/raleway-light-webfont.woff2') format('woff2'),
+         url('../fonts/raleway-light-webfont.woff') format('woff'),
+         url('../fonts/raleway-light-webfont.ttf') format('truetype'),
+         url('../fonts/raleway-light-webfont.svg#ralewaylight') format('svg');
+    font-weight: normal;
     font-style: normal;
 
 }
 
 @font-face {
-    font-family: 'ralewaylight_italic';
-    src: url('raleway-lightitalic-webfont.woff2') format('woff2'),
-         url('raleway-lightitalic-webfont.woff') format('woff');
-    font-weight: lighter;
-    font-style: italic;
-
-}
-
-@font-face {
-    font-family: 'ralewaymedium';
-    src: url('raleway-medium-webfont.woff2') format('woff2'),
-         url('raleway-medium-webfont.woff') format('woff');
+    font-family: 'raleway';
+    src: url('../fonts/raleway-medium-webfont.woff2') format('woff2'),
+         url('../fonts/raleway-medium-webfont.woff') format('woff'),
+         url('../fonts/raleway-medium-webfont.ttf') format('truetype'),
+         url('../fonts/raleway-medium-webfont.svg#ralewaymedium') format('svg');
     font-weight: bold;
     font-style: normal;
 
 }
 
-@font-face {
-    font-family: 'ralewaymedium_italic';
-    src: url('raleway-mediumitalic-webfont.woff2') format('woff2'),
-         url('raleway-mediumitalic-webfont.woff') format('woff');
-    font-weight: bold;
-    font-style: italic;
-
-}
 
 * {
   box-sizing: border-box;
@@ -123,13 +117,9 @@ table {
 
 body {
   color: #2d2d2d;
-  font-family: "Raleway", sans-serif;
+  font-family: "raleway", sans-serif;
   font-size: 16px;
   line-height: 2rem;
-}
-
-ol, ul {
-  list-style: none;
 }
 
 img {
@@ -143,37 +133,43 @@ img {
 }
 
 h2 {
-    font-family: "Playfair Display", serif;
-    font-size: 3rem;
+    font-family: "playfair_display", serif;
+    font-weight: bold;
+    font-size: 2.5rem;
+    line-height: 3rem;
     text-align: center;
 }
 
 .heading-italic {
+    font-family: "playfair_display", serif;
     font-style: italic;
     font-weight: normal;
 }
+
 
 /* --------------- Header --------------- */
 
 .main-header {
   background-color: #FFF;
+  box-shadow: 0 2px 2px rgba(61, 61, 61 ,0.2);
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 1rem;
+  padding: 1.25rem; 
   position: fixed;
   top: 0;
+  width: 100%;
   z-index: 1;
 }
 
 .logo {
-  align-self: flex-start;
+  align-self: center;
   cursor: pointer;
   max-width: 120px;
 }
 
 .cart {
-  align-self: flex-end;
+  align-self: center;
   cursor: pointer;
   max-width: 50px;
 }
@@ -181,6 +177,7 @@ h2 {
 .navigation {
   align-self: center;
   flex: 1 0 auto;
+  font-weight: bold;
 }
 
 .navigation ul {
@@ -192,7 +189,7 @@ h2 {
 .navigation li {
   cursor: pointer;
   display: inline-block;
-  margin: 0 1rem;
+  margin: 0 0.5rem;
   text-transform: uppercase;
 }
 
@@ -209,7 +206,7 @@ h2 {
 /* --------------- Hero --------------- */
 
 .hero {
-  height: 400px;
+  height: 420px;
   width: 100%;
   background:
     linear-gradient(to bottom, rgba(0, 0, 0 ,0.3), rgba(100,100,100,0.3)),
@@ -226,12 +223,15 @@ h2 {
 
 .hero-text {
   color: #FFF;
-  left: 10%;
+  font-weight: bold;
+  left: 50%;
   position: absolute;
   text-align: center;
   text-shadow: 2px 2px 2px #3d3d3d;
   text-transform: uppercase;
-  top: 40%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
 }
 
 .hero-subheading {
@@ -240,38 +240,24 @@ h2 {
 }
 
 .hero-heading {
-  font-family: "PlayfairDisplay", serif;
-  font-size: 3rem;
-  font-weight: 400;
+  font-family: "playfair_display", serif;
+  font-weight: normal;
+  font-size: 2.5rem;
+  line-height: 2.5rem;
   text-transform: capitalize;
 }
 
 /* --------------- Hand-crafted --------------- */
 
 .hand-crafted {
+  font-size: 1.2rem;
   margin: 3rem 0;
+  text-align: center;
 }
 
 .hand-crafted h2 {
   margin-bottom: 2rem;
 }
-
-/* --------------- Products --------------- */
-
-h3 {
-  font-family: "Playfair Display", serif;
-  font-size: 2rem;
-  font-weight: 700;
-  text-align: center;
-  color: #e2574c;
-}
-
-p, ul {
-  text-align: center;
-  font-size: 1.25rem;
-  font-weight: 300;
-}
-
 
 /* --------------- Categories --------------- */
 
@@ -281,31 +267,40 @@ p, ul {
   text-align: center;
 }
 
-.category-text a {
+.category-text {
   color: #FFF;
   font-size: 1.5rem;
-  font-weight: 500;
-  text-shadow: 2px 2px 2px #3d3d3d;
+  font-weight: bold;
+  left: 50%;
+  position: absolute;
+  text-align: center;
   text-decoration: none;
+  text-shadow: 2px 2px 2px #3d3d3d;
   text-transform: uppercase;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
-.category-text a:hover {
+a:hover {
   color: #f5ecc4;
 }
 
 .rectangle {
   flex: 2 0 100%;
   max-width: 100%;
+  height: 250px;
   border: 3px solid #FFF;
   border-left: 0;
   border-right: 0;
+  position: relative;
 }
 
 .square {
   flex: 1 0 50%;
   max-width: 50%;
+  height: 250px;
   border: 3px solid #FFF;
+  position: relative;
 }
 
 .mens {
@@ -371,7 +366,9 @@ p, ul {
 
 .carousel-cell p {
   font-size: 0.75rem;
+  font-weight: bold;
   text-transform: uppercase;
+  color: #969696;
 }
 
 .carousel-cell .price {
@@ -381,6 +378,11 @@ p, ul {
 .carousel-cell h3 {
   font-size: 1.5rem;
   margin: 0.25rem 0;
+  font-family: "playfair_display", serif;
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  color: #e2574c;
 }
 
 .carousel-cell button {
@@ -402,14 +404,14 @@ p, ul {
   color: #FFF;
   margin-bottom: 5px;
   width: 100%;
-  padding: 10% 0;
+  padding: 4rem 0;
   text-shadow: 2px 2px 2px #3d3d3d;
   text-align: center;
 }
 
 .sign-up-heading {
   font-size: 2.5rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 .sign-up-text {
@@ -417,7 +419,7 @@ p, ul {
 }
 
 .sign-up form {
-  margin: 10% auto 0;
+  margin: 2rem auto 0;
   position: relative;
   width: 80%;
 }
@@ -454,19 +456,19 @@ input[type="submit"] {
 footer {
   background-color: #242424;
   color: #FFF;
-  font-family: "Playfair Display", serif;
+  font-family: "playfair_display", serif;
   line-height: 1.5rem;
   padding: 4rem;
   text-align: center;
 }
 
 .copyright {
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 .contacts, a {
   color: #FFF;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 .address {
@@ -483,6 +485,413 @@ footer {
   line-height: 1.75em;
 }
 
-@media screen and (min-width: 600px) {
-    
+.social li a:hover {
+  color: #e2574c;
 }
+
+@media screen and (min-width: 600px) {
+
+  /* --------------- Header --------------- */
+
+  .logo {
+    order: 1;
+  }
+
+  .cart {
+    order: 3;
+  }
+
+  .navigation {
+    order: 2;
+  }
+
+  .navigation ul {
+    border-top: 0;
+    padding-top: 0;
+  }
+
+  .navigation li {
+    margin: 0 0.75rem;
+  }
+
+/* --------------- Hero --------------- */
+
+  .hero-heading {
+  font-size: 3rem;
+  line-height: 3rem;
+}
+
+  /* --------------- Categories --------------- */
+
+  .category {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  .category-text {
+    color: #FFF;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 2px #3d3d3d;
+    text-align: center;
+  }
+
+  .category-text a {
+    left: 50%;
+    position: absolute;
+    text-decoration: none;
+    text-transform: uppercase;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .category-text a:hover {
+    color: #f5ecc4;
+  }
+
+  .rectangle {
+    flex: 2 0 100%;
+    max-width: 100%;
+    height: 250px;
+    border: 3px solid #FFF;
+    border-left: 0;
+    border-right: 0;
+    position: relative;
+  }
+
+  .square {
+    flex: 1 0 50%;
+    max-width: 50%;
+    height: 250px;
+    border: 3px solid #FFF;
+    position: relative;
+  }
+
+  .mens {
+    background:
+      linear-gradient(to bottom, rgba(0, 0, 0 ,0.2), rgba(100,100,100,0.2)),
+      url("../images/mens-category.jpg") no-repeat;
+    background-size: cover, cover;
+  }
+
+  .trends {
+    background:
+      linear-gradient(to bottom, rgba(0, 0, 0 ,0.2), rgba(100,100,100,0.2)),
+      url("../images/trends-category.jpg") no-repeat;
+    background-size: cover, cover;
+    border-left: 0;
+  }
+
+  .glasses {
+    background:
+      linear-gradient(to bottom, rgba(0, 0, 0 ,0.2), rgba(100,100,100,0.2)),
+      url("../images/glasses-category.jpg") no-repeat;
+    background-size: cover, cover;
+    border-right: 0;
+  }
+
+  .sale {
+    background:
+      linear-gradient(to bottom, rgba(0, 0, 0 ,0.2), rgba(100,100,100,0.2)),
+      url("../images/sale-category.jpg") no-repeat;
+    background-size: cover, cover;
+    border-left: 0;
+  }
+
+  .bags {
+    background:
+      linear-gradient(to bottom, rgba(0, 0, 0 ,0.2), rgba(100,100,100,0.2)),
+      url("../images/bags-category.jpg") no-repeat;
+    background-size: cover, cover;
+    border-right: 0;
+  }
+
+  .womens {
+    background:
+      linear-gradient(to bottom, rgba(0, 0, 0 ,0.2), rgba(100,100,100,0.2)),
+      url("../images/womens-category.jpg") no-repeat;
+    background-size: cover, cover;
+  }
+
+  /* --------------- Products --------------- */
+
+  .products {
+    padding: 4rem 0;
+  }
+
+  .products h2 {
+    margin-bottom: 2rem;
+  }
+
+  .main-carousel {
+    display: block;
+
+  }
+
+  .carousel-cell {
+    flex-basis: 50%;
+    text-align: center;
+  }
+
+  .carousel-cell p {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    color: #969696;
+  }
+
+  .carousel-cell .price {
+    font-size: 1rem;
+  }
+
+  .carousel-cell h3 {
+    font-size: 1.5rem;
+    margin: 0.25rem 0;
+    font-family: "playfair_display", serif;
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    color: #e2574c;
+  }
+
+  .carousel-cell button {
+    background-color: #242424;
+    border: 0;
+    border-radius: 25px;
+    color: #FFF;
+    cursor: pointer;
+    margin: 0.75rem 0 2rem;
+    padding: 0.5rem 1rem;
+  }
+
+  /* --------------- Footer --------------- */
+
+  footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 1.25rem;
+    text-align: left;
+  }
+
+  .contacts {
+    margin-top: 1rem;
+  }
+
+  .social {
+    margin-top: 0rem;
+  }
+
+  .social li {
+    display: block;
+    line-height: 1.95rem;
+    text-align: right;
+  }
+
+
+  @media screen and (min-width: 1240px) {
+
+  /* --------------- Header --------------- */
+
+  .main-header {
+    padding: 1rem 10rem;
+  }
+
+  .logo {
+    max-width: 150px;
+  }
+
+  .cart {
+    max-width: 60px;
+  }
+  
+  .navigation li {
+    margin: 0 1rem;
+  }
+
+  /* --------------- Hero --------------- */
+
+  .hero {
+    height: 600px;
+    background-size: auto, 270px, cover;
+  }
+
+  .hero-subheading {
+    font-size: 1.75rem;
+  }
+
+  .hero-heading {
+    font-size: 5rem;
+  }
+
+  /* --------------- Hand-crafted --------------- */
+
+  .hand-crafted {
+    font-size: 1.2rem;
+    margin: 3rem auto;
+    width: 50%;
+  }
+
+  /* --------------- Categories --------------- */
+
+  .category {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  .category-text {
+    color: #FFF;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 2px #3d3d3d;
+    text-align: center;
+  }
+
+  .category-text a {
+    left: 50%;
+    position: absolute;
+    text-decoration: none;
+    text-transform: uppercase;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .category-text a:hover {
+    color: #f5ecc4;
+  }
+
+  .rectangle {
+    flex: 2 0 100%;
+    max-width: 100%;
+    height: 250px;
+    border: 3px solid #FFF;
+    border-left: 0;
+    border-right: 0;
+    position: relative;
+  }
+
+  .square {
+    flex: 1 0 50%;
+    max-width: 50%;
+    height: 250px;
+    border: 3px solid #FFF;
+    position: relative;
+  }
+
+  .mens {
+    background:
+      linear-gradient(to bottom, rgba(0, 0, 0 ,0.2), rgba(100,100,100,0.2)),
+      url("../images/mens-category.jpg") no-repeat;
+    background-size: cover, cover;
+  }
+
+  .trends {
+    background:
+      linear-gradient(to bottom, rgba(0, 0, 0 ,0.2), rgba(100,100,100,0.2)),
+      url("../images/trends-category.jpg") no-repeat;
+    background-size: cover, cover;
+    border-left: 0;
+  }
+
+  .glasses {
+    background:
+      linear-gradient(to bottom, rgba(0, 0, 0 ,0.2), rgba(100,100,100,0.2)),
+      url("../images/glasses-category.jpg") no-repeat;
+    background-size: cover, cover;
+    border-right: 0;
+  }
+
+  .sale {
+    background:
+      linear-gradient(to bottom, rgba(0, 0, 0 ,0.2), rgba(100,100,100,0.2)),
+      url("../images/sale-category.jpg") no-repeat;
+    background-size: cover, cover;
+    border-left: 0;
+  }
+
+  .bags {
+    background:
+      linear-gradient(to bottom, rgba(0, 0, 0 ,0.2), rgba(100,100,100,0.2)),
+      url("../images/bags-category.jpg") no-repeat;
+    background-size: cover, cover;
+    border-right: 0;
+  }
+
+  .womens {
+    background:
+      linear-gradient(to bottom, rgba(0, 0, 0 ,0.2), rgba(100,100,100,0.2)),
+      url("../images/womens-category.jpg") no-repeat;
+    background-size: cover, cover;
+  }
+
+  /* --------------- Products --------------- */
+
+  .products {
+    padding: 4rem 0;
+  }
+
+  .products h2 {
+    margin-bottom: 2rem;
+  }
+
+  .main-carousel {
+    display: block;
+
+  }
+
+  .carousel-cell {
+    flex-basis: 50%;
+    text-align: center;
+  }
+
+  .carousel-cell p {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    color: #969696;
+  }
+
+  .carousel-cell .price {
+    font-size: 1rem;
+  }
+
+  .carousel-cell h3 {
+    font-size: 1.5rem;
+    margin: 0.25rem 0;
+    font-family: "playfair_display", serif;
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    color: #e2574c;
+  }
+
+  .carousel-cell button {
+    background-color: #242424;
+    border: 0;
+    border-radius: 25px;
+    color: #FFF;
+    cursor: pointer;
+    margin: 0.75rem 0 2rem;
+    padding: 0.5rem 1rem;
+  }
+
+  /* --------------- Sign-Up --------------- */
+
+  .sign-up-heading {
+    margin-bottom: 2rem;
+  }
+
+  .sign-up-text {
+    font-size: 1.2rem;
+    margin: 0 auto;
+    width: 50%;
+  }
+
+  .sign-up form {
+    width: 40%;
+  }
+
+  /* --------------- Footer --------------- */
+
+  footer {
+    padding: 3rem 10rem;
+  }
