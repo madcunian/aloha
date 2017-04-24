@@ -17,10 +17,10 @@
       </div>
         <nav class="navigation">
           <ul>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Shop</a></li>
-            <li><a href="#">Featured</a></li>
-            <li><a href="#">Updates</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#shop">Shop</a></li>
+            <li><a href="#featured">Featured</a></li>
+            <li><a href="#updates">Updates</a></li>
           </ul>
         </nav>
     </header>
@@ -32,12 +32,12 @@
       </div>
     </section>
 
-    <section class="hand-crafted container">
+    <section class="hand-crafted container" id="about">
       <h2><span class="heading-italic">Hand-Crafted</span> Styles</h2>
       <p>Aloha Apparel Co. sells only the finest ready-to-travel clothing. Browse our current selection of products or sign-up for updates below.</p>
     </section>
 
-    <section class="category">
+    <section class="category" id="shop">
       <div class="mens rectangle">
         <a href="#" class="category-text">Men's</a>
       </div>
@@ -58,7 +58,7 @@
       </div>
     </section>
     
-    <section class="products">
+    <section class="products" id="featured">
       <h2><span class="heading-italic">Most-Loved</span> Products</h2>
         <div class="main-carousel" data-flickity='{ "autoPlay": 2000, "pauseAutoPlayOnHover": true }'>
           <div class="carousel-cell">
@@ -91,14 +91,14 @@
           </div>
         </div>
     </section>
-    <section class="sign-up">
+    <section class="sign-up" id="updates">
         <h2 class="sign-up-heading">
           <span class="heading-italic">Sign-Up for</span> Updates
         </h2>
         <p class="sign-up-text">Stay updated on our latest product releases, be first to find out about upcoming sales, and get free style tips from our blog. Unsubscribe at any time.</p>
         <form class="sign-up-form">
           <input type="email" id="sign-up" name="name" placeholder="Your Email">
-          <input type="submit" name="name" value="Subscribe">
+          <input type="submit" name="subscribe" value="Subscribe">
         </form>
     </section>
     <footer class="footer">
@@ -112,11 +112,21 @@
         </div>
       </div>
       <ul class="social">
-        <li><a href="a"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-        <li><a href="a"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-        <li><a href="a"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-        <li><a href="a"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
-        <li><a href="a"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+        <li>
+          <a href="#"><i class="fa fa-facebook fa-fw" aria-hidden="true"></i><span class="social-text">&nbsp; Facebook</span></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa fa-twitter fa-fw" aria-hidden="true"></i><span class="social-text">&nbsp; Twitter</span></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa fa-instagram fa-fw" aria-hidden="true"></i><span class="social-text">&nbsp; Instagram</span></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa fa-pinterest fa-fw" aria-hidden="true"></i><span class="social-text">&nbsp; Pinterest</span></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa fa-google-plus fa-fw" aria-hidden="true"></i><span class="social-text">&nbsp; Google+</span></a>
+        </li>
     </footer>
     <script src="lib/jquery-3.2.1.min.js"></script>
     <script src="lib/flickity/flickity.pkgd.min.js"></script>
