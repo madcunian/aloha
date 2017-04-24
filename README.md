@@ -18,9 +18,14 @@ The goal of this project is to build a responsive website from .png mock-up by u
 - iTerm
 - Google Chrome & it's Developer Tools
 
+### Online Sources
+- Mozilla Developer Network (https://developer.mozilla.org/)
+- GitHub (https://github.com)
+- CodePen (http://codepen.io/)
+
 ### Structure
-- Semantic elements
-- Viewport
+- Semantic elements (*It's a better practice to use them. E.g.* `<header>..</header>` *vs* `<div class="header"></div>`)
+- Viewport (`<meta name="viewport"`)
 
 ### Style
 - Eric Meyer Reset (http://meyerweb.com/eric/tools/css/reset/)
@@ -32,7 +37,3 @@ The goal of this project is to build a responsive website from .png mock-up by u
 ### Interactivity
 - jQuery (http://jquery.com/)
 - jQuery Flickity (http://flickity.metafizzy.co/)
-
-### Misc
-- Mozilla Developer Network (https://developer.mozilla.org/)
-- CodePen (http://codepen.io/)
