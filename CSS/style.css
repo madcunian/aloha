@@ -118,7 +118,7 @@ table {
 body {
   color: #2d2d2d;
   font-family: "raleway", sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 2rem;
 }
 
@@ -133,17 +133,17 @@ img {
 }
 
 h2 {
-    font-family: "playfair_display", serif;
-    font-weight: bold;
-    font-size: 2.5rem;
-    line-height: 3rem;
-    text-align: center;
+  font-family: "playfair_display", serif;
+  font-weight: bold;
+  font-size: 2.5rem;
+  line-height: 3rem;
+  text-align: center;
 }
 
 .heading-italic {
-    font-family: "playfair_display", serif;
-    font-style: italic;
-    font-weight: normal;
+  font-family: "playfair_display", serif;
+  font-style: italic;
+  font-weight: normal;
 }
 
 
@@ -182,7 +182,7 @@ h2 {
 }
 
 .navigation ul {
-  border-top: 1px solid #969696;
+  border-top: 1px solid #d7d7d7;
   padding-top: 0.75rem;
   text-align: center;
 }
@@ -200,7 +200,7 @@ h2 {
 }
 
 .navigation a:hover {
-  color: #555;
+  color: #b64036;
 }
 
 /* --------------- Hero --------------- */
@@ -236,7 +236,7 @@ h2 {
 
 .hero-subheading {
   font-size: 1.25rem;
-  margin-bottom: 1rem; 
+  margin-bottom: 0.5rem; 
 }
 
 .hero-heading {
@@ -250,7 +250,6 @@ h2 {
 /* --------------- Hand-crafted --------------- */
 
 .hand-crafted {
-  font-size: 1.2rem;
   margin: 3rem auto;
   text-align: center;
   width: 90%;
@@ -453,6 +452,10 @@ input[type="submit"] {
   top: 0.25rem;
 }
 
+input[type="submit"]:hover {
+  background-color: #b64036;
+}
+
 /* --------------- Footer --------------- */
 
 footer {
@@ -501,6 +504,10 @@ footer {
 }
 
 @media screen and (min-width: 600px) {
+
+  body {
+    font-size: 16px;
+  }
 
   /* --------------- Header --------------- */
 

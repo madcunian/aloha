@@ -1,25 +1,25 @@
-# Aloha Project
+# Project 1: Aloha Website
 
-This is my description.
+The goal of this project is to build a responsive website from .png mock-up by using HTML5, CSS3 and jQuery.
+
 
 ## What I learned
 
-- HTML
-- CSS
+- How to structure website with HTML5;
+- How to stylize HTML elements with CSS3;
+- How to add interactivity with jQuery.
 
-# h1
-## h2
-### h3
-#### h4
 
-Paragraph.
+## Technologies used
 
-- item 1
-- item 2
-- item 3
-
-1. one
-2. two 
-3. three
-
-[Link Text](https://google.ca)
+- Visual Studio Code for Mac
+- Git
+- iTerm
+- Google Chrome & it's Developer Tools
+- [CodePen] (http://codepen.io/)
+- [Eric Meyer Reset] (http://meyerweb.com/eric/tools/css/reset/)
+- @font-face
+- [Font Awesome] (http://fontawesome.io/)
+- [Font Squirrel] (http://fontsquirrel.com/)
+- [jQuery] (http://jquery.com/)
+- jQuery [Flickity] (http://flickity.metafizzy.co/)
