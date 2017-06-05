@@ -3,12 +3,15 @@
 <head>
   <meta charset="utf-8" name="viewport" content="width=device-width">
   <script src="https://use.fontawesome.com/382f947f1c.js"></script>
+  <link rel="stylesheet" href="CSS/reset.css">
+  <link rel="stylesheet" href="CSS/fonts.css">
   <link rel="stylesheet" href="CSS/style.css">
   <link rel="stylesheet" href="lib/flickity/flickity.min.css">
   <title>Aloha Homepage</title>
 </head>
+
 <body>
-  <header class="main-header">
+  <header class="main-header container">
     <div class="logo">
       <img src="images/aloha-logo.svg" alt="Aloha Logo" class="logo">
     </div>
@@ -18,13 +21,14 @@
     </div>
       <nav class="navigation">
         <ul>
-          <li><a href="#about">About</a></li>
+          <li><a href="#about" tabindex="1">About</a></li>
           <li><a href="#shop">Shop</a></li>
           <li><a href="#featured">Featured</a></li>
           <li><a href="#updates">Updates</a></li>
         </ul>
       </nav>
   </header>
+
   <div class="spacer"></div>
   <section class="hero container">
     <div class="hero-text">
@@ -32,6 +36,7 @@
       <p class="hero-heading">Spring/Summer 2016</p>
     </div>
   </section>
+
   <section class="hand-crafted container" id="about">
     <h2><span class="heading-italic">Hand-Crafted</span> Styles</h2>
     <p>Aloha Apparel Co. sells only the finest ready-to-travel clothing. Browse our current selection of products or sign-up for updates below.</p>
@@ -56,9 +61,10 @@
       <a href="#" class="category-text">Women's</a>
     </div>
   </section>
-  <section class="products" id="featured">
+
+  <section class="products container" id="featured">
     <h2><span class="heading-italic">Most-Loved</span> Products</h2>
-      <div class="main-carousel" data-flickity='{ "autoPlay": 2000, "pauseAutoPlayOnHover": true }'>
+      <div class="main-carousel" data-flickity='{ "autoPlay": 2000, "pauseAutoPlayOnHover": true, "prevNextButtons": false }'>
         <div class="carousel-cell">
           <img src="images/stretch-knit-dress.jpg" alt="Image of stretch knit dress">
           <p>Dresses</p>
@@ -89,7 +95,8 @@
         </div>
       </div>
   </section>
-  <section class="sign-up" id="updates">
+
+  <section class="sign-up container" id="updates">
       <h2 class="sign-up-heading">
         <span class="heading-italic">Sign-Up for</span> Updates
       </h2>
@@ -99,7 +106,8 @@
         <input type="submit" name="subscribe" value="Subscribe">
       </form>
   </section>
-  <footer class="footer">
+
+  <footer class="footer container">
     <div class="yellow-pages">
       <div class="copyright">
         <p>&copy; 2016 Aloha Apparel Co.</p>
@@ -109,6 +117,7 @@
         <p class="address">Vancouver, BC, Canada</p>
       </div>
     </div>
+
     <ul class="social">
       <li>
         <a href="#"><i class="fa fa-facebook fa-fw" aria-hidden="true"></i><span class="social-text">&nbsp; Facebook</span></a>
@@ -127,7 +136,9 @@
       </li>
     </ul>
   </footer>
+
   <script src="lib/jquery-3.2.1.min.js"></script>
+  <script src="lib/tota11y.min.js"></script>
   <script src="lib/flickity/flickity.pkgd.min.js"></script>
   <script src="js/main.js"></script>
 </body>

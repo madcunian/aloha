@@ -5,9 +5,9 @@ $(function() {
   .not('[href="#0"]')
   .click(function(event) {
     if (
-      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
+      location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '') 
       && 
-      location.hostname == this.hostname
+      location.hostname === this.hostname
     ) {
       var target = $(this.hash);
       target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
@@ -37,7 +37,7 @@ $(function() {
 
   $('.sign-up-form').on('submit', function (event) {
     event.preventDefault();
-    if ( $('#sign-up').val() == '' ) {
+    if ( $('#sign-up').val() === '' ) {
       alert('Please enter your email.');
     } else {
       alert('Thank you!');
@@ -51,5 +51,9 @@ $(function() {
     itemCount ++;
     $('.itemCount').html(itemCount).css('display', 'block');
   }); 
+
+  $("a[href^='#']").not("a[href='#']").click(function() {
+    $("#"+$(this).attr("href").slice(1)+"").focus();
+  });
 
 });
